@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(202, 225, 240);
+}
+.site-title{
+    font-family: lato,sans-serif ;
+    font-size: 30px ;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1;
+}
+.site-description{
+    text-align: center;
+    margin: 1px ;
+    font-family: serif;
+    font-size: 20px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: unset;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background:lightblue;
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px; /* Used to enable scrolling */
+  }
+  .active{
+      background-color:lightblue;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
